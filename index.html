@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20260221215429">
+  <link rel="icon" type="image/x-icon" href="img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap&_v=20260221215429"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap&_v=20260221215429"
+    rel="stylesheet">
+  <title>K-speed</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__wrapper">
+    <div class="header__container">
+      <div class="header__body">
+        <a class="header__logo" href="#">
+          <img src="img/logo.svg" alt="Логотип" loading="lazy">
+          <span class="header__logo-label">Автосервис в г. Химки</span>
+        </a>
+        <div class="header__actions">
+          <div class="header__item">
+            <div class="header__icon">
+              <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.46875 0C2.90194 0 0 2.87381 0 6.40631C0 8.97469 3.2355 12.9966 5.16488 15.1661C5.49506 15.5368 5.97038 15.75 6.46875 15.75C6.96712 15.75 7.44244 15.5368 7.77263 15.1661C9.70144 12.9977 12.9375 8.97525 12.9375 6.40631C12.9375 2.87381 10.0356 0 6.46875 0ZM6.46875 3.62925C8.01956 3.62925 9.28125 4.87519 9.28125 6.40631C9.28125 7.93744 8.01956 9.18338 6.46875 9.18338C4.91794 9.18338 3.65625 7.93744 3.65625 6.40631C3.65625 4.87519 4.91794 3.62925 6.46875 3.62925Z"
+                  fill="currentColor" />
+              </svg>
+            </div>
+            <div class="header__inner">
+              <div class="header__text">
+                <p>Московская обл. г. Химки</p>
+                <p>ул.Химки д. 14 стр. 5</p>
+              </div>
+            </div>
+          </div>
+          <div class="header__item">
+            <div class="header__icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.7071 14.0737C15.6009 14.1796 15.4727 14.315 15.3369 14.4582C14.9979 14.818 14.5744 15.2653 14.309 15.4467C12.9125 16.401 11.0442 15.9444 9.72269 15.3937C7.97937 14.6673 6.08136 13.3283 4.37716 11.6238C2.67136 9.91918 1.33261 8.02047 0.606236 6.27805C0.0562613 4.95617 -0.401311 3.0874 0.553114 1.69051C0.734355 1.42489 1.18262 1.00204 1.54191 0.66238C1.68566 0.526942 1.82002 0.398972 1.92627 0.293065C2.11489 0.105368 2.37016 0 2.63625 0C2.90234 0 3.15761 0.105368 3.34624 0.293065L5.91574 2.86196C6.10333 3.05059 6.20862 3.3058 6.20862 3.57183C6.20862 3.83785 6.10333 4.09307 5.91574 4.28169L5.21578 4.98029C4.98201 5.21236 4.82942 5.51371 4.78073 5.8395C4.73203 6.16528 4.78982 6.49808 4.94551 6.78837C5.90827 8.60559 7.39459 10.0917 9.21187 11.0542C9.50208 11.2099 9.8348 11.2676 10.1605 11.2188C10.4861 11.17 10.7874 11.0174 11.0192 10.7835L11.7175 10.0849C11.9061 9.8972 12.1614 9.79183 12.4275 9.79183C12.6936 9.79183 12.9488 9.8972 13.1374 10.0849L15.7071 12.6542C15.8947 12.8428 16 13.098 16 13.3639C16 13.6299 15.8947 13.8851 15.7071 14.0737Z"
+                  fill="currentColor" />
+              </svg>
+            </div>
+            <div class="header__inner">
+              <a class="header__phone-icon" href="tel:88317777777" aria-label="Позвонить нам">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.7071 14.0737C15.6009 14.1796 15.4727 14.315 15.3369 14.4582C14.9979 14.818 14.5744 15.2653 14.309 15.4467C12.9125 16.401 11.0442 15.9444 9.72269 15.3937C7.97937 14.6673 6.08136 13.3283 4.37716 11.6238C2.67136 9.91918 1.33261 8.02047 0.606236 6.27805C0.0562613 4.95617 -0.401311 3.0874 0.553114 1.69051C0.734355 1.42489 1.18262 1.00204 1.54191 0.66238C1.68566 0.526942 1.82002 0.398972 1.92627 0.293065C2.11489 0.105368 2.37016 0 2.63625 0C2.90234 0 3.15761 0.105368 3.34624 0.293065L5.91574 2.86196C6.10333 3.05059 6.20862 3.3058 6.20862 3.57183C6.20862 3.83785 6.10333 4.09307 5.91574 4.28169L5.21578 4.98029C4.98201 5.21236 4.82942 5.51371 4.78073 5.8395C4.73203 6.16528 4.78982 6.49808 4.94551 6.78837C5.90827 8.60559 7.39459 10.0917 9.21187 11.0542C9.50208 11.2099 9.8348 11.2676 10.1605 11.2188C10.4861 11.17 10.7874 11.0174 11.0192 10.7835L11.7175 10.0849C11.9061 9.8972 12.1614 9.79183 12.4275 9.79183C12.6936 9.79183 12.9488 9.8972 13.1374 10.0849L15.7071 12.6542C15.8947 12.8428 16 13.098 16 13.3639C16 13.6299 15.8947 13.8851 15.7071 14.0737Z"
+                    fill="currentColor" />
+                </svg>
+              </a>
+              <a class="header__phone" href="tel:88317777777">8 (831) 777-77-77</a>
+              <button type="button" class="header__callback-btn btn-reset">Заказать обратный звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <main class="page">
+      <section class="page__hero hero">
+        <div class="hero__container">
+          <div class="hero__body">
+            <div class="hero__content">
+              <div class="hero__inner">
+                <h1 class="hero__title">
+                  <span>Починим всё</span> <br> Ремонт двигателя, КПП, ходовой и электрики — на любом авто
+                </h1>
+                <div class="hero__descr">
+                  Профессиональный автосервис в Химках — ремонтируем отечественные, иномарки и спортивные автомобили BMW
+                  M, Mercedes-AMG, Audi RS и другие.
+                </div>
+                <div class="hero__advantage">
+                  <div class="hero__benefit-item benefit-item">
+                    <div class="benefit-item__icon">
+                      <img src="img/icons/tools.svg" alt="" aria-hidden="true" loading="lazy">
+                    </div>
+                    <div class="benefit-item__label">Более 1500 автомобилей отремонтировано</div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__buttons">
+                <button type="button" class="hero__btn btn btn--accent btn-reset">
+                  <span>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.7163 3.93319C29.7163 3.86226 29.6454 3.79133 29.6099 3.79133C29.539 3.79133 29.4681 3.79133 29.4326 3.8268L26.2407 6.94772L22.9425 3.64947L26.1343 0.457613C26.2053 0.386683 26.2053 0.280287 26.1343 0.209357C26.0989 0.173892 26.0989 0.173892 26.0634 0.173892C23.6518 -0.358084 21.1692 0.351217 19.3605 2.01808C17.6582 3.7204 18.0838 5.70645 18.3675 7.01865C18.4029 7.19598 18.4384 7.40877 18.4739 7.55063C17.339 8.75644 8.75644 17.3745 7.4797 18.5803C7.33784 18.5448 7.19598 18.5093 7.01865 18.4739C5.70645 18.1547 3.79133 17.6936 2.01808 19.4314C0.351217 21.2047 -0.358084 23.6872 0.173892 26.0634C0.209357 26.1698 0.280287 26.2053 0.386683 26.2053C0.422148 26.2053 0.457613 26.1698 0.457613 26.1698L3.64947 23.0489L6.94772 26.3471L3.75587 29.539C3.68494 29.6099 3.68494 29.7163 3.75587 29.7872C3.79133 29.8227 3.79133 29.8227 3.8268 29.8227C4.32331 29.9291 4.85528 30 5.38726 30C7.30237 30 9.14656 29.2907 10.5297 27.9431C12.232 26.2407 11.8064 24.2547 11.5227 22.9425C11.4873 22.7652 11.4518 22.5524 11.4163 22.4105C12.5512 21.2047 21.1338 12.5867 22.4105 11.3809L22.8715 11.4873C24.1483 11.8064 26.1343 12.303 27.8721 10.5652C29.539 8.79191 30.2128 6.30935 29.7163 3.93319Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+                  Записаться на диагностику
+                </button>
+                <button type="button" class="hero__btn btn btn--primary btn-reset">
+                  <span>
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 13.125C0 5.87626 5.87627 0 13.125 0C20.3738 0 26.25 5.87626 26.25 13.125C26.25 20.3738 20.3738 26.25 13.125 26.25C10.6523 26.25 8.337 25.5653 6.36105 24.375H0.9375C0.591759 24.375 0.274078 24.1847 0.110934 23.8799C-0.0522094 23.575 -0.0343313 23.2052 0.157453 22.9175L2.01988 20.1238C0.740503 18.0977 0 15.6967 0 13.125ZM7.5 11.25C6.46447 11.25 5.625 12.0894 5.625 13.125C5.625 14.1606 6.46447 15 7.5 15C8.53556 15 9.375 14.1606 9.375 13.125C9.375 12.0894 8.53556 11.25 7.5 11.25ZM11.25 13.125C11.25 12.0894 12.0894 11.25 13.125 11.25C14.1606 11.25 15 12.0894 15 13.125C15 14.1606 14.1606 15 13.125 15C12.0894 15 11.25 14.1606 11.25 13.125ZM18.75 11.25C17.7144 11.25 16.875 12.0894 16.875 13.125C16.875 14.1606 17.7144 15 18.75 15C19.7856 15 20.625 14.1606 20.625 13.125C20.625 12.0894 19.7856 11.25 18.75 11.25Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+                  WhatsApp
+                </button>
+              </div>
+            </div>
+            <div class="hero__image">
+              <picture><source srcset="img/hero/main-1.webp, img/hero/main-1_2x.webp 2x" type="image/webp"><img src="img/hero/main-1.png" srcset="img/hero/main-1_2x.png 2x" alt="" loading="lazy"></picture>
+            </div>
+            <div class="hero__decor">
+              <img src="img/hero/decor.svg" alt="" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__choose choose">
+        <div class="choose__container">
+          <div class="choose__top top-block">
+            <h2 class="top-block__title">Почему выбирают нас?</h2>
+            <div class="top-block__descr">Делаем качественный ремонт — без накруток, с гарантией и уважением к вашему
+              времени.</div>
+          </div>
+          <div class="choose__body">
+            <ul class="choose__list list-reset">
+              <li class="choose__item item-choose">
+                <div class="item-choose__icon">
+                  <img src="img/icons/gears.svg" alt="" aria-hidden="true" loading="lazy">
+                </div>
+                <div class="item-choose__body">
+                  <h3 class="item-choose__title">Опыт более 10 лет</h3>
+                  <div class="item-choose__text">Ремонтируем всё, что ездит</div>
+                </div>
+              </li>
+              <li class="choose__item item-choose">
+                <div class="item-choose__icon">
+                  <img src="img/icons/dilegence.svg" alt="" aria-hidden="true" loading="lazy">
+                </div>
+                <div class="item-choose__body">
+                  <h3 class="item-choose__title">Диагностика за 30 минут</h3>
+                  <div class="item-choose__text">Быстро и точно найдём причину</div>
+                </div>
+              </li>
+              <li class="choose__item" aria-hidden="true">
+                <div class="choose__image">
+                  <picture><source srcset="img/choose/01.webp, img/choose/01_2x.webp 2x" type="image/webp"><img src="img/choose/01.png" srcset="img/choose/01_2x.png 2x" alt="" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="choose__item item-choose">
+                <div class="item-choose__icon">
+                  <img src="img/icons/trusted.svg" alt="" aria-hidden="true" loading="lazy">
+                </div>
+                <div class="item-choose__body">
+                  <h3 class="item-choose__title">Гарантия до 2 лет</h3>
+                  <div class="item-choose__text">Доверяем своей работе</div>
+                </div>
+              </li>
+              <li class="choose__item item-choose">
+                <div class="item-choose__icon">
+                  <img src="img/icons/repair.svg" alt="" aria-hidden="true" loading="lazy">
+                </div>
+                <div class="item-choose__body">
+                  <h3 class="item-choose__title">Современный инструмент</h3>
+                  <div class="item-choose__text">Как в дилерском центре</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page__advantages advantages">
+        <div class="advantages__container">
+          <div class="advantages__top top-block">
+            <h2 class="top-block__title">Что мы делаем лучше всех?</h2>
+          </div>
+          <div class="advantages__body">
+            <ul class="advantages__list list-reset">
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__body">
+                  <h3 class="item-advantages__title">Ремонт двигателя</h3>
+                  <ul class="item-advantages__list list-reset">
+                    <li class="item-advantages__item">Капиталка, замена поршней, ГРМ, турбины, чип-тюнинг</li>
+                    <li class="item-advantages__item">Подходит для: всех марок, включая AMG, M, RS</li>
+                  </ul>
+                </div>
+                <button type="button" class="item-advantages__button btn btn--accent btn-reset">
+                  <span>
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.8931 2.75323C19.8931 2.70358 19.8456 2.65393 19.8219 2.65393C19.7744 2.65393 19.7269 2.65393 19.7031 2.67875L17.5664 4.8634L15.3585 2.55463L17.4952 0.320329C17.5427 0.270677 17.5427 0.196201 17.4952 0.14655C17.4714 0.121724 17.4714 0.121724 17.4477 0.121724C15.8333 -0.250659 14.1714 0.245852 12.9606 1.41265C11.821 2.60428 12.1059 3.99451 12.2958 4.91305C12.3195 5.03718 12.3433 5.18613 12.367 5.28544C11.6073 6.1295 5.86185 12.1621 5.00716 13.0062C4.91219 12.9814 4.81723 12.9565 4.69852 12.9317C3.82008 12.7083 2.53804 12.3855 1.35097 13.602C0.235117 14.8433 -0.239713 16.5811 0.116409 18.2444C0.140151 18.3188 0.187634 18.3437 0.258858 18.3437C0.2826 18.3437 0.306341 18.3188 0.306341 18.3188L2.44308 16.1342L4.65104 18.443L2.5143 20.6773C2.46682 20.7269 2.46682 20.8014 2.5143 20.851C2.53804 20.8759 2.53804 20.8759 2.56178 20.8759C2.89416 20.9503 3.25029 21 3.60641 21C4.88845 21 6.12301 20.5035 7.04893 19.5601C8.18852 18.3685 7.90362 16.9783 7.71369 16.0597C7.68995 15.9356 7.66621 15.7866 7.64247 15.6873C8.40219 14.8433 14.1476 8.81066 15.0023 7.96659L15.311 8.04107C16.1657 8.2645 17.4952 8.61206 18.6585 7.39561C19.7744 6.15433 20.2255 4.41654 19.8931 2.75323Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+                  Записаться
+                </button>
+                <div class="item-advantages__image">
+                  <picture><source srcset="img/advantages/01.webp, img/advantages/01_2x.webp 2x" type="image/webp"><img src="img/advantages/01.png" srcset="img/advantages/01_2x.png 2x" alt="" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__body">
+                  <h3 class="item-advantages__title">Ремонт КПП</h3>
+                  <ul class="item-advantages__list list-reset">
+                    <li class="item-advantages__item">Диагностика, замена масла, ремонт гидроблока</li>
+                    <li class="item-advantages__item">МКПП, АКПП, DSG, робот</li>
+                  </ul>
+                </div>
+                <button type="button" class="item-advantages__button btn btn--accent btn-reset">
+                  <span>
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.8931 2.75323C19.8931 2.70358 19.8456 2.65393 19.8219 2.65393C19.7744 2.65393 19.7269 2.65393 19.7031 2.67875L17.5664 4.8634L15.3585 2.55463L17.4952 0.320329C17.5427 0.270677 17.5427 0.196201 17.4952 0.14655C17.4714 0.121724 17.4714 0.121724 17.4477 0.121724C15.8333 -0.250659 14.1714 0.245852 12.9606 1.41265C11.821 2.60428 12.1059 3.99451 12.2958 4.91305C12.3195 5.03718 12.3433 5.18613 12.367 5.28544C11.6073 6.1295 5.86185 12.1621 5.00716 13.0062C4.91219 12.9814 4.81723 12.9565 4.69852 12.9317C3.82008 12.7083 2.53804 12.3855 1.35097 13.602C0.235117 14.8433 -0.239713 16.5811 0.116409 18.2444C0.140151 18.3188 0.187634 18.3437 0.258858 18.3437C0.2826 18.3437 0.306341 18.3188 0.306341 18.3188L2.44308 16.1342L4.65104 18.443L2.5143 20.6773C2.46682 20.7269 2.46682 20.8014 2.5143 20.851C2.53804 20.8759 2.53804 20.8759 2.56178 20.8759C2.89416 20.9503 3.25029 21 3.60641 21C4.88845 21 6.12301 20.5035 7.04893 19.5601C8.18852 18.3685 7.90362 16.9783 7.71369 16.0597C7.68995 15.9356 7.66621 15.7866 7.64247 15.6873C8.40219 14.8433 14.1476 8.81066 15.0023 7.96659L15.311 8.04107C16.1657 8.2645 17.4952 8.61206 18.6585 7.39561C19.7744 6.15433 20.2255 4.41654 19.8931 2.75323Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+                  Записаться
+                </button>
+                <div class="item-advantages__image">
+                  <picture><source srcset="img/advantages/02.webp, img/advantages/02_2x.webp 2x" type="image/webp"><img src="img/advantages/02.png" srcset="img/advantages/02_2x.png 2x" alt="" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__body">
+                  <h3 class="item-advantages__title">Ходовая часть</h3>
+                  <ul class="item-advantages__list list-reset">
+                    <li class="item-advantages__item">Подвеска, стойки, рычаги, сайлентблоки,</li>
+                  </ul>
+                </div>
+                <button type="button" class="item-advantages__button btn btn--accent btn-reset">
+                  <span>
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.8931 2.75323C19.8931 2.70358 19.8456 2.65393 19.8219 2.65393C19.7744 2.65393 19.7269 2.65393 19.7031 2.67875L17.5664 4.8634L15.3585 2.55463L17.4952 0.320329C17.5427 0.270677 17.5427 0.196201 17.4952 0.14655C17.4714 0.121724 17.4714 0.121724 17.4477 0.121724C15.8333 -0.250659 14.1714 0.245852 12.9606 1.41265C11.821 2.60428 12.1059 3.99451 12.2958 4.91305C12.3195 5.03718 12.3433 5.18613 12.367 5.28544C11.6073 6.1295 5.86185 12.1621 5.00716 13.0062C4.91219 12.9814 4.81723 12.9565 4.69852 12.9317C3.82008 12.7083 2.53804 12.3855 1.35097 13.602C0.235117 14.8433 -0.239713 16.5811 0.116409 18.2444C0.140151 18.3188 0.187634 18.3437 0.258858 18.3437C0.2826 18.3437 0.306341 18.3188 0.306341 18.3188L2.44308 16.1342L4.65104 18.443L2.5143 20.6773C2.46682 20.7269 2.46682 20.8014 2.5143 20.851C2.53804 20.8759 2.53804 20.8759 2.56178 20.8759C2.89416 20.9503 3.25029 21 3.60641 21C4.88845 21 6.12301 20.5035 7.04893 19.5601C8.18852 18.3685 7.90362 16.9783 7.71369 16.0597C7.68995 15.9356 7.66621 15.7866 7.64247 15.6873C8.40219 14.8433 14.1476 8.81066 15.0023 7.96659L15.311 8.04107C16.1657 8.2645 17.4952 8.61206 18.6585 7.39561C19.7744 6.15433 20.2255 4.41654 19.8931 2.75323Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+                  Записаться
+                </button>
+                <div class="item-advantages__image">
+                  <picture><source srcset="img/advantages/03.webp, img/advantages/03_2x.webp 2x" type="image/webp"><img src="img/advantages/03.png" srcset="img/advantages/03_2x.png 2x" alt="" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="advantages__item item-advantages">
+                <div class="item-advantages__body">
+                  <h3 class="item-advantages__title">Электрика и ЭБУ</h3>
+                  <ul class="item-advantages__list list-reset">
+                    <li class="item-advantages__item">Диагностика ошибок, прошивка, ремонт проводки, CAN-шины</li>
+                  </ul>
+                </div>
+                <button type="button" class="item-advantages__button btn btn--accent btn-reset">
+                  <span>
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.8931 2.75323C19.8931 2.70358 19.8456 2.65393 19.8219 2.65393C19.7744 2.65393 19.7269 2.65393 19.7031 2.67875L17.5664 4.8634L15.3585 2.55463L17.4952 0.320329C17.5427 0.270677 17.5427 0.196201 17.4952 0.14655C17.4714 0.121724 17.4714 0.121724 17.4477 0.121724C15.8333 -0.250659 14.1714 0.245852 12.9606 1.41265C11.821 2.60428 12.1059 3.99451 12.2958 4.91305C12.3195 5.03718 12.3433 5.18613 12.367 5.28544C11.6073 6.1295 5.86185 12.1621 5.00716 13.0062C4.91219 12.9814 4.81723 12.9565 4.69852 12.9317C3.82008 12.7083 2.53804 12.3855 1.35097 13.602C0.235117 14.8433 -0.239713 16.5811 0.116409 18.2444C0.140151 18.3188 0.187634 18.3437 0.258858 18.3437C0.2826 18.3437 0.306341 18.3188 0.306341 18.3188L2.44308 16.1342L4.65104 18.443L2.5143 20.6773C2.46682 20.7269 2.46682 20.8014 2.5143 20.851C2.53804 20.8759 2.53804 20.8759 2.56178 20.8759C2.89416 20.9503 3.25029 21 3.60641 21C4.88845 21 6.12301 20.5035 7.04893 19.5601C8.18852 18.3685 7.90362 16.9783 7.71369 16.0597C7.68995 15.9356 7.66621 15.7866 7.64247 15.6873C8.40219 14.8433 14.1476 8.81066 15.0023 7.96659L15.311 8.04107C16.1657 8.2645 17.4952 8.61206 18.6585 7.39561C19.7744 6.15433 20.2255 4.41654 19.8931 2.75323Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+                  Записаться
+                </button>
+                <div class="item-advantages__image">
+                  <picture><source srcset="img/advantages/04.webp, img/advantages/04_2x.webp 2x" type="image/webp"><img src="img/advantages/04.png" srcset="img/advantages/04_2x.png 2x" alt="" loading="lazy"></picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page__guarantee guarantee">
+        <div class="guarantee__body">
+          <div class="guarantee__image">
+            <picture><source srcset="img/guarantee/01.webp, img/guarantee/01_2x.webp 2x" type="image/webp"><img src="img/guarantee/01.jpg" srcset="img/guarantee/01_2x.jpg 2x" alt="" loading="lazy"></picture>
+            <!-- <picture><source srcset="img/cover-1.webp" type="image/webp"><img src="img/cover-1.jpg" alt="" loading="lazy"></picture> -->
+          </div>
+          <div class="guarantee__decor">
+            <img src="img/guarantee/decor.svg" aria-hidden="true" alt="" loading="lazy">
+          </div>
+          <div class="guarantee__content">
+            <div class="guarantee__inner">
+              <h2 class="guarantee__title">Гарантия и прозрачность</h2>
+              <div class="guarantee__descr">
+                <p>Никаких скрытых платежей. Только честная работа.</p>
+              </div>
+            </div>
+            <ul class="guarantee__list list-reset">
+              <li class="guarantee__item benefit-item">
+                <div class="benefit-item__icon">
+                  <div class="benefit-item__count"></div>
+                </div>
+                <div class="benefit-item__label">Гарантия до 2 лет</div>
+              </li>
+              <li class="guarantee__item benefit-item">
+                <div class="benefit-item__icon">
+                  <div class="benefit-item__count"></div>
+                </div>
+                <div class="benefit-item__label">Фиксированные цены после диагностики</div>
+              </li>
+              <li class="guarantee__item benefit-item">
+                <div class="benefit-item__icon">
+                  <div class="benefit-item__count"></div>
+                </div>
+                <div class="benefit-item__label">Фото/видео этапов ремонта — вы видите всё</div>
+              </li>
+              <li class="guarantee__item benefit-item">
+                <div class="benefit-item__icon">
+                  <div class="benefit-item__count"></div>
+                </div>
+                <div class="benefit-item__label">Чеки на все запчасти — только то, что установлено</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page__brands brands">
+        <div class="brands__container">
+          <h2 class="brands__title">Ремонтируем автомобили всех марок</h2>
+          <div class="brands__body">
+            <ul class="brands__list list-reset">
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/01.webp, img/brands/01_2x.webp 2x" type="image/webp"><img src="img/brands/01.png" srcset="img/brands/01_2x.png 2x" alt="Audi" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/02.webp, img/brands/02_2x.webp 2x" type="image/webp"><img src="img/brands/02.png" srcset="img/brands/02_2x.png 2x" alt="Bmw" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/03.webp, img/brands/03_2x.webp 2x" type="image/webp"><img src="img/brands/03.png" srcset="img/brands/03_2x.png 2x" alt="Volkswagen" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/04.webp, img/brands/04_2x.webp 2x" type="image/webp"><img src="img/brands/04.png" srcset="img/brands/04_2x.png 2x" alt="Mercedes-Benz" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/05.webp, img/brands/05_2x.webp 2x" type="image/webp"><img src="img/brands/05.png" srcset="img/brands/05_2x.png 2x" alt="Kia" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/06.webp, img/brands/06_2x.webp 2x" type="image/webp"><img src="img/brands/06.png" srcset="img/brands/06_2x.png 2x" alt="Mazda" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/07.webp, img/brands/07_2x.webp 2x" type="image/webp"><img src="img/brands/07.png" srcset="img/brands/07_2x.png 2x" alt="Nissan" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/08.webp, img/brands/08_2x.webp 2x" type="image/webp"><img src="img/brands/08.png" srcset="img/brands/08_2x.png 2x" alt="Opel" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/09.webp, img/brands/09_2x.webp 2x" type="image/webp"><img src="img/brands/09.png" srcset="img/brands/09_2x.png 2x" alt="Toyota" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/10.webp, img/brands/10_2x.webp 2x" type="image/webp"><img src="img/brands/10.png" srcset="img/brands/10_2x.png 2x" alt="Reno" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/11.webp, img/brands/11_2x.webp 2x" type="image/webp"><img src="img/brands/11.png" srcset="img/brands/11_2x.png 2x" alt="Honda" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/12.webp, img/brands/12_2x.webp 2x" type="image/webp"><img src="img/brands/12.png" srcset="img/brands/12_2x.png 2x" alt="Ford" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/13.webp, img/brands/13_2x.webp 2x" type="image/webp"><img src="img/brands/13.png" srcset="img/brands/13_2x.png 2x" alt="Hyundai" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/14.webp, img/brands/14_2x.webp 2x" type="image/webp"><img src="img/brands/14.png" srcset="img/brands/14_2x.png 2x" alt="Lexus" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/15.webp, img/brands/15_2x.webp 2x" type="image/webp"><img src="img/brands/15.png" srcset="img/brands/15_2x.png 2x" alt="Skoda" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/16.webp, img/brands/16_2x.webp 2x" type="image/webp"><img src="img/brands/16.png" srcset="img/brands/16_2x.png 2x" alt="Chevrolet" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/17.webp, img/brands/17_2x.webp 2x" type="image/webp"><img src="img/brands/17.png" srcset="img/brands/17_2x.png 2x" alt="Lada" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/18.webp, img/brands/18_2x.webp 2x" type="image/webp"><img src="img/brands/18.png" srcset="img/brands/18_2x.png 2x" alt="Peugeot" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/19.webp, img/brands/19_2x.webp 2x" type="image/webp"><img src="img/brands/19.png" srcset="img/brands/19_2x.png 2x" alt="Volvo" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/20.webp, img/brands/20_2x.webp 2x" type="image/webp"><img src="img/brands/20.png" srcset="img/brands/20_2x.png 2x" alt="Subaru" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/21.webp, img/brands/21_2x.webp 2x" type="image/webp"><img src="img/brands/21.png" srcset="img/brands/21_2x.png 2x" alt="Infiniti" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <img src="img/brands/22.png" srcset="img/brands/22_2x.png 2x" alt="Mitsubishi Motors"
+                    loading="lazy">
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/23.webp, img/brands/23_2x.webp 2x" type="image/webp"><img src="img/brands/23.png" srcset="img/brands/23_2x.png 2x" alt="Land Rover" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="brands__item">
+                <div class="brands__image">
+                  <picture><source srcset="img/brands/24.webp, img/brands/24_2x.webp 2x" type="image/webp"><img src="img/brands/24.png" srcset="img/brands/24_2x.png 2x" alt="Citroen" loading="lazy"></picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page__reviews reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title">Отзывы клиентов</h2>
+          <div class="reviews__body">
+            <div class="reviews__slider slider-reviews">
+              <div class="slider-reviews__arrows">
+                <button type="button" class="slider-reviews__arrow slider-reviews__arrow--prev btn-reset">
+                  <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.5 9.5459C0.671573 9.5459 0 10.2175 0 11.0459C0 11.8743 0.671573 12.5459 1.5 12.5459V9.5459ZM42.5607 12.1066C43.1464 11.5208 43.1464 10.571 42.5607 9.98524L33.0147 0.439297C32.4289 -0.14649 31.4792 -0.14649 30.8934 0.439297C30.3076 1.02508 30.3076 1.97483 30.8934 2.56062L39.3787 11.0459L30.8934 19.5312C30.3076 20.117 30.3076 21.0667 30.8934 21.6525C31.4792 22.2383 32.4289 22.2383 33.0147 21.6525L42.5607 12.1066ZM1.5 11.0459V12.5459H41.5V11.0459V9.5459H1.5V11.0459Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
+                <button type="button" class="slider-reviews__arrow slider-reviews__arrow--next btn-reset">
+                  <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.5 9.5459C0.671573 9.5459 0 10.2175 0 11.0459C0 11.8743 0.671573 12.5459 1.5 12.5459V9.5459ZM42.5607 12.1066C43.1464 11.5208 43.1464 10.571 42.5607 9.98524L33.0147 0.439297C32.4289 -0.14649 31.4792 -0.14649 30.8934 0.439297C30.3076 1.02508 30.3076 1.97483 30.8934 2.56062L39.3787 11.0459L30.8934 19.5312C30.3076 20.117 30.3076 21.0667 30.8934 21.6525C31.4792 22.2383 32.4289 22.2383 33.0147 21.6525L42.5607 12.1066ZM1.5 11.0459V12.5459H41.5V11.0459V9.5459H1.5V11.0459Z"
+                      fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+              <div class="slider-reviews__slider swiper">
+                <div class="slider-reviews__wrapper swiper-wrapper">
+                  <div class="slider-reviews__slide swiper-slide">
+                    <div class="slider-reviews__item item-reviews">
+                      <div class="item-reviews__header">
+                        <div class="item-reviews__avatars">
+                          <div class="item-reviews__avatar">
+                            <picture><source srcset="img/reviews/avatar.webp" type="image/webp"><img src="img/reviews/avatar.png" alt="" loading="lazy"></picture>
+                          </div>
+                          <div class="item-reviews__avatar">
+                            <picture><source srcset="img/reviews/avatar-video.webp" type="image/webp"><img src="img/reviews/avatar-video.png" alt="" loading="lazy"></picture>
+                            <button type="button" class="item-reviews__play btn-reset">
+                              <svg width="28" height="30" viewBox="0 0 28 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M22 8.20075C24 9.35546 24 12.2422 22 13.3969L8.5 21.1911C6.5 22.3458 4 20.9025 4 18.5931L4 3.0046C4 0.695196 6.5 -0.748178 8.5 0.406523L22 8.20075Z"
+                                  fill="white" fill-opacity="0.72" shape-rendering="crispEdges" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="item-reviews__inner">
+                          <div class="item-reviews__title">Алексей, Porsche</div>
+                          <div class="item-reviews__date">2 месяца назад</div>
+                        </div>
+                      </div>
+                      <div class="item-reviews__body">
+                        <blockquote class="item-reviews__descr">
+                          <p>
+                            Появился стук в двигателе после 40 тыс. км — начал паниковать: дилер предложил капиталку за
+                            800 тысяч. Привез в K-SPEED — сделали диагностику за 30 минут. Оказалось, проблема не в
+                            блоке,
+                            а в натяжителе цепи. Заменили за 1 день, сэкономил 750 тыс.
+                          </p>
+                          <p>
+                            Были настороже — но всё честно: прислали видео разборки, чеки, всё по делу. Теперь всем авто
+                            владельцам советую только сюда.
+                          </p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide swiper-slide">
+                    <div class="slider-reviews__item item-reviews">
+                      <div class="item-reviews__header">
+                        <div class="item-reviews__avatars">
+                          <div class="item-reviews__avatar">
+                            <picture><source srcset="img/reviews/avatar.webp" type="image/webp"><img src="img/reviews/avatar.png" alt="" loading="lazy"></picture>
+                          </div>
+                          <div class="item-reviews__avatar">
+                            <picture><source srcset="img/reviews/avatar-video.webp" type="image/webp"><img src="img/reviews/avatar-video.png" alt="" loading="lazy"></picture>
+                            <button type="button" class="item-reviews__play btn-reset">
+                              <svg width="28" height="30" viewBox="0 0 28 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M22 8.20075C24 9.35546 24 12.2422 22 13.3969L8.5 21.1911C6.5 22.3458 4 20.9025 4 18.5931L4 3.0046C4 0.695196 6.5 -0.748178 8.5 0.406523L22 8.20075Z"
+                                  fill="white" fill-opacity="0.72" shape-rendering="crispEdges" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="item-reviews__inner">
+                          <div class="item-reviews__title">Алексей, Porsche</div>
+                          <div class="item-reviews__date">2 месяца назад</div>
+                        </div>
+                      </div>
+                      <div class="item-reviews__body">
+                        <blockquote class="item-reviews__descr">
+                          <p>
+                            Появился стук в двигателе после 40 тыс. км — начал паниковать: дилер предложил капиталку за
+                            800 тысяч. Привез в K-SPEED — сделали диагностику за 30 минут. Оказалось, проблема не в
+                            блоке,
+                            а в натяжителе цепи. Заменили за 1 день, сэкономил 750 тыс.
+                          </p>
+                          <p>
+                            Были настороже — но всё честно: прислали видео разборки, чеки, всё по делу. Теперь всем авто
+                            владельцам советую только сюда.
+                          </p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide swiper-slide">
+                    <div class="slider-reviews__item item-reviews">
+                      <div class="item-reviews__header">
+                        <div class="item-reviews__avatars">
+                          <div class="item-reviews__avatar">
+                            <picture><source srcset="img/reviews/avatar.webp" type="image/webp"><img src="img/reviews/avatar.png" alt="" loading="lazy"></picture>
+                          </div>
+                          <div class="item-reviews__avatar">
+                            <picture><source srcset="img/reviews/avatar-video.webp" type="image/webp"><img src="img/reviews/avatar-video.png" alt="" loading="lazy"></picture>
+                            <button type="button" class="item-reviews__play btn-reset">
+                              <svg width="28" height="30" viewBox="0 0 28 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M22 8.20075C24 9.35546 24 12.2422 22 13.3969L8.5 21.1911C6.5 22.3458 4 20.9025 4 18.5931L4 3.0046C4 0.695196 6.5 -0.748178 8.5 0.406523L22 8.20075Z"
+                                  fill="white" fill-opacity="0.72" shape-rendering="crispEdges" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="item-reviews__inner">
+                          <div class="item-reviews__title">Алексей, Porsche</div>
+                          <div class="item-reviews__date">2 месяца назад</div>
+                        </div>
+                      </div>
+                      <div class="item-reviews__body">
+                        <blockquote class="item-reviews__descr">
+                          <p>
+                            Появился стук в двигателе после 40 тыс. км — начал паниковать: дилер предложил капиталку за
+                            800 тысяч. Привез в K-SPEED — сделали диагностику за 30 минут. Оказалось, проблема не в
+                            блоке,
+                            а в натяжителе цепи. Заменили за 1 день, сэкономил 750 тыс.
+                          </p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-reviews__slide swiper-slide">
+                    <div class="slider-reviews__item item-reviews">
+                      <div class="item-reviews__header">
+                        <div class="item-reviews__avatars">
+                          <div class="item-reviews__avatar">
+                            <picture><source srcset="img/reviews/avatar.webp" type="image/webp"><img src="img/reviews/avatar.png" alt="" loading="lazy"></picture>
+                          </div>
+                          <div class="item-reviews__avatar">
+                            <picture><source srcset="img/reviews/avatar-video.webp" type="image/webp"><img src="img/reviews/avatar-video.png" alt="" loading="lazy"></picture>
+                            <button type="button" class="item-reviews__play btn-reset">
+                              <svg width="28" height="30" viewBox="0 0 28 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M22 8.20075C24 9.35546 24 12.2422 22 13.3969L8.5 21.1911C6.5 22.3458 4 20.9025 4 18.5931L4 3.0046C4 0.695196 6.5 -0.748178 8.5 0.406523L22 8.20075Z"
+                                  fill="white" fill-opacity="0.72" shape-rendering="crispEdges" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="item-reviews__inner">
+                          <div class="item-reviews__title">Алексей, Porsche</div>
+                          <div class="item-reviews__date">2 месяца назад</div>
+                        </div>
+                      </div>
+                      <div class="item-reviews__body">
+                        <blockquote class="item-reviews__descr">
+                          <p>
+                            Появился стук в двигателе после 40 тыс. км — начал паниковать: дилер предложил капиталку за
+                            800 тысяч. Привез в K-SPEED — сделали диагностику за 30 минут. Оказалось, проблема не в
+                            блоке,
+                            а в натяжителе цепи. Заменили за 1 день, сэкономил 750 тыс.
+                          </p>
+                          <p>
+                            Были настороже — но всё честно: прислали видео разборки, чеки, всё по делу. Теперь всем авто
+                            владельцам советую только сюда.
+                          </p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__rating">
+                <picture><source srcset="img/reviews/rating.webp" type="image/webp"><img src="img/reviews/rating.png" alt="Рейтинг яндекс 5.0" loading="lazy"></picture>
+              </div>
+              <div class="reviews__image">
+                <img src="img/reviews/01.png" srcset="img/reviews/01_2x.png 2x"
+                  alt="Улыбающийся стоящий механик стоящий с скрещенными руками и держащий ключи в автосервисе"
+                  loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__callback callback">
+        <div class="callback__container">
+          <div class="callback__body">
+            <div class="callback__image">
+              <picture><source srcset="img/callback/01.webp, img/callback/01_2x.webp 2x" type="image/webp"><img src="img/callback/01.png" srcset="img/callback/01_2x.png 2x" alt="" loading="lazy"></picture>
+            </div>
+            <div class="callback__content">
+              <div class="callback__inner">
+                <h2 class="callback__title">Запишись на диагностику</h2>
+                <div class="callback__descr">
+                  <p>Хватит ездить с поломкой. <br> Запишитесь на бесплатную диагностику!</p>
+                </div>
+              </div>
+              <form class="callback__form form-callback" action="#">
+                <div class="form-callback__body">
+                  <div class="form-callback__item">
+                    <input class="form-callback__input" autocomplete="off" type="text" name="callback-name"
+                      placeholder="Имя" data-required>
+                  </div>
+                  <div class="form-callback__item">
+                    <input class="form-callback__input" autocomplete="off" type="tel" name="callback-name"
+                      placeholder="+7(999) 999-99-99" data-required="tel" data-tel-input>
+                  </div>
+                </div>
+                <button class="form-callback__button btn btn--accent btn-reset" type="submit">
+                  <span>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.7163 3.93319C29.7163 3.86226 29.6454 3.79133 29.6099 3.79133C29.539 3.79133 29.4681 3.79133 29.4326 3.8268L26.2407 6.94772L22.9425 3.64947L26.1343 0.457613C26.2053 0.386683 26.2053 0.280287 26.1343 0.209357C26.0989 0.173892 26.0989 0.173892 26.0634 0.173892C23.6518 -0.358084 21.1692 0.351217 19.3605 2.01808C17.6582 3.7204 18.0838 5.70645 18.3675 7.01865C18.4029 7.19598 18.4384 7.40877 18.4739 7.55063C17.339 8.75644 8.75644 17.3745 7.4797 18.5803C7.33784 18.5448 7.19598 18.5093 7.01865 18.4739C5.70645 18.1547 3.79133 17.6936 2.01808 19.4314C0.351217 21.2047 -0.358084 23.6872 0.173892 26.0634C0.209357 26.1698 0.280287 26.2053 0.386683 26.2053C0.422148 26.2053 0.457613 26.1698 0.457613 26.1698L3.64947 23.0489L6.94772 26.3471L3.75587 29.539C3.68494 29.6099 3.68494 29.7163 3.75587 29.7872C3.79133 29.8227 3.79133 29.8227 3.8268 29.8227C4.32331 29.9291 4.85528 30 5.38726 30C7.30237 30 9.14656 29.2907 10.5297 27.9431C12.232 26.2407 11.8064 24.2547 11.5227 22.9425C11.4873 22.7652 11.4518 22.5524 11.4163 22.4105C12.5512 21.2047 21.1338 12.5867 22.4105 11.3809L22.8715 11.4873C24.1483 11.8064 26.1343 12.303 27.8721 10.5652C29.539 8.79191 30.2128 6.30935 29.7163 3.93319Z"
+                        fill="currentColor" />
+                    </svg>
+                  </span>
+                  Записаться на диагностику
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+        <div class="callback__decor" style="background-image: url(img/callback/decor.svg);"></div>
+      </section>
+      <section class="page__contacts contacts">
+        <div class="contacts__container">
+          <div class="contacts__wrapper">
+            <h2 class="contacts__title">Наши контакты</h2>
+            <ul class="contacts__list list-reset">
+              <li class="contacts__item">
+                <div class="contacts__item-title">Телефон:</div>
+                <div class="contacts__inner">
+                  <a class="contacts__link" href="tel:88317777777">
+                    <span>
+                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.21678 6.46627C7.16796 6.51493 7.1091 6.57716 7.04669 6.64298C6.89094 6.80828 6.69636 7.01378 6.57441 7.09711C5.93278 7.53559 5.07437 7.32578 4.46718 7.07278C3.6662 6.73902 2.79414 6.12383 2.01113 5.34067C1.22738 4.55746 0.61228 3.68508 0.278541 2.88451C0.0258498 2.27716 -0.184386 1.41854 0.254133 0.776723C0.337406 0.654678 0.543364 0.460397 0.708446 0.304337C0.77449 0.242108 0.836227 0.183311 0.885043 0.134651C0.971708 0.0484125 1.08899 0 1.21125 0C1.33351 0 1.45079 0.0484125 1.53746 0.134651L2.71804 1.31496C2.80423 1.40162 2.85261 1.51888 2.85261 1.64111C2.85261 1.76334 2.80423 1.8806 2.71804 1.96726L2.39644 2.28824C2.28903 2.39487 2.21892 2.53333 2.19655 2.68301C2.17418 2.8327 2.20073 2.9856 2.27226 3.11898C2.71461 3.95392 3.39752 4.63675 4.23248 5.07898C4.36582 5.15049 4.51869 5.17701 4.66833 5.1546C4.81796 5.13218 4.95635 5.06203 5.06289 4.95459L5.38371 4.6336C5.47037 4.54736 5.58766 4.49895 5.70991 4.49895C5.83217 4.49895 5.94946 4.54736 6.03612 4.6336L7.21678 5.81411C7.30297 5.90074 7.35135 6.01798 7.35135 6.14019C7.35135 6.2624 7.30297 6.37964 7.21678 6.46627Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                    8 (831) 777-77-77
+                  </a>
+                  <a class="contacts__link" href="tel:88317777777">
+                    <span>
+                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.21678 6.46627C7.16796 6.51493 7.1091 6.57716 7.04669 6.64298C6.89094 6.80828 6.69636 7.01378 6.57441 7.09711C5.93278 7.53559 5.07437 7.32578 4.46718 7.07278C3.6662 6.73902 2.79414 6.12383 2.01113 5.34067C1.22738 4.55746 0.61228 3.68508 0.278541 2.88451C0.0258498 2.27716 -0.184386 1.41854 0.254133 0.776723C0.337406 0.654678 0.543364 0.460397 0.708446 0.304337C0.77449 0.242108 0.836227 0.183311 0.885043 0.134651C0.971708 0.0484125 1.08899 0 1.21125 0C1.33351 0 1.45079 0.0484125 1.53746 0.134651L2.71804 1.31496C2.80423 1.40162 2.85261 1.51888 2.85261 1.64111C2.85261 1.76334 2.80423 1.8806 2.71804 1.96726L2.39644 2.28824C2.28903 2.39487 2.21892 2.53333 2.19655 2.68301C2.17418 2.8327 2.20073 2.9856 2.27226 3.11898C2.71461 3.95392 3.39752 4.63675 4.23248 5.07898C4.36582 5.15049 4.51869 5.17701 4.66833 5.1546C4.81796 5.13218 4.95635 5.06203 5.06289 4.95459L5.38371 4.6336C5.47037 4.54736 5.58766 4.49895 5.70991 4.49895C5.83217 4.49895 5.94946 4.54736 6.03612 4.6336L7.21678 5.81411C7.30297 5.90074 7.35135 6.01798 7.35135 6.14019C7.35135 6.2624 7.30297 6.37964 7.21678 6.46627Z"
+                          fill="currentColor" />
+                      </svg>
+                    </span>
+                    8 (831) 777-77-77
+                  </a>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__item-title">Адрес:</div>
+                <div class="contacts__inner">
+                  <p>г. Химки</p>
+                  <p>ул. Химки д. 1 стр. 1</p>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__item-title">Режим работы:</div>
+                <div class="contacts__inner">
+                  <p>Пн-Пт: 8.00 — 19.00</p>
+                  <p>Сб-Вс: 9.00 — 17.00</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__map"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__body">
+      <a class="footer__logo" href="#">
+        <img src="img/logo-second.svg" alt="Логотип" loading="lazy">
+      </a>
+      <div class="footer__menu menu-footer">
+        <nav class="menu-footer__body">
+          <ul class="menu-footer__list list-reset">
+            <li class="menu-footer__item"><a class="menu-footer__link" href="#">Главная</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="#">Услуги</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="#">Отзывы</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__actions">
+        <div class="footer__wrapper-actions">
+          <div class="footer__icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.7071 14.0737C15.6009 14.1796 15.4727 14.315 15.3369 14.4582C14.9979 14.818 14.5744 15.2653 14.309 15.4467C12.9125 16.401 11.0442 15.9444 9.72269 15.3937C7.97937 14.6673 6.08136 13.3283 4.37716 11.6238C2.67136 9.91918 1.33261 8.02047 0.606236 6.27805C0.0562613 4.95617 -0.401311 3.0874 0.553114 1.69051C0.734355 1.42489 1.18262 1.00204 1.54191 0.66238C1.68566 0.526942 1.82002 0.398972 1.92627 0.293065C2.11489 0.105368 2.37016 0 2.63625 0C2.90234 0 3.15761 0.105368 3.34624 0.293065L5.91574 2.86196C6.10333 3.05059 6.20862 3.3058 6.20862 3.57183C6.20862 3.83785 6.10333 4.09307 5.91574 4.28169L5.21578 4.98029C4.98201 5.21236 4.82942 5.51371 4.78073 5.8395C4.73203 6.16528 4.78982 6.49808 4.94551 6.78837C5.90827 8.60559 7.39459 10.0917 9.21187 11.0542C9.50208 11.2099 9.8348 11.2676 10.1605 11.2188C10.4861 11.17 10.7874 11.0174 11.0192 10.7835L11.7175 10.0849C11.9061 9.8972 12.1614 9.79183 12.4275 9.79183C12.6936 9.79183 12.9488 9.8972 13.1374 10.0849L15.7071 12.6542C15.8947 12.8428 16 13.098 16 13.3639C16 13.6299 15.8947 13.8851 15.7071 14.0737Z"
+                fill="currentColor" />
+            </svg>
+          </div>
+          <div class="footer__inner">
+            <a class="footer__phone" href="tel:88317777777">8 (831) 777-77-77</a>
+            <button type="button" class="footer__callback btn-reset">Заказать обратный звонок</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__text">
+        © 2025 Все права на материалы, дизайн и контент сайта защищены в соответствии с законодательством РФ.
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="js/app.min.js?_v=20260221215429"></script>
+</body>
+
+</html>

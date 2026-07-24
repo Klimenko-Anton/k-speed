@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20260221215429">
+  <link rel="stylesheet" href="css/style.min.css?_v=20260724221012">
   <link rel="icon" type="image/x-icon" href="img/favicons/favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap&_v=20260221215429"
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap&_v=20260724221012"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap&_v=20260221215429"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap&_v=20260724221012"
     rel="stylesheet">
   <title>K-speed</title>
 </head>
@@ -90,7 +90,7 @@
                 </div>
               </div>
               <div class="hero__buttons">
-                <button type="button" class="hero__btn btn btn--accent btn-reset">
+                <a class="hero__btn btn btn--accent" href="#" data-goto=".callback" data-goto-header>
                   <span>
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -99,8 +99,8 @@
                     </svg>
                   </span>
                   Записаться на диагностику
-                </button>
-                <button type="button" class="hero__btn btn btn--primary btn-reset">
+                </a>
+                <a class="hero__btn btn btn--primary" href="#">
                   <span>
                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -109,7 +109,7 @@
                     </svg>
                   </span>
                   WhatsApp
-                </button>
+                </a>
               </div>
             </div>
             <div class="hero__image">
@@ -129,6 +129,7 @@
               времени.</div>
           </div>
           <div class="choose__body">
+
             <ul class="choose__list list-reset">
               <li class="choose__item item-choose">
                 <div class="item-choose__icon">
@@ -146,11 +147,6 @@
                 <div class="item-choose__body">
                   <h3 class="item-choose__title">Диагностика за 30 минут</h3>
                   <div class="item-choose__text">Быстро и точно найдём причину</div>
-                </div>
-              </li>
-              <li class="choose__item" aria-hidden="true">
-                <div class="choose__image">
-                  <picture><source srcset="img/choose/01.webp, img/choose/01_2x.webp 2x" type="image/webp"><img src="img/choose/01.png" srcset="img/choose/01_2x.png 2x" alt="" loading="lazy"></picture>
                 </div>
               </li>
               <li class="choose__item item-choose">
@@ -172,6 +168,56 @@
                 </div>
               </li>
             </ul>
+
+            <div class="choose__item-image" aria-hidden="true">
+              <div class="choose__image">
+                <picture><source srcset="img/choose/01.webp, img/choose/01_2x.webp 2x" type="image/webp"><img src="img/choose/01.png" srcset="img/choose/01_2x.png 2x" alt="" loading="lazy"></picture>
+              </div>
+            </div>
+
+            <!-- <ul class="choose__list list-reset">
+              <li class="choose__item item-choose">
+                <div class="item-choose__icon">
+                  <img src="img/icons/gears.svg" alt="" aria-hidden="true" loading="lazy">
+                </div>
+                <div class="item-choose__body">
+                  <h3 class="item-choose__title">Опыт более 10 лет</h3>
+                  <div class="item-choose__text">Ремонтируем всё, что ездит</div>
+                </div>
+              </li>
+              <li class="choose__item item-choose">
+                <div class="item-choose__icon">
+                  <img src="img/icons/dilegence.svg" alt="" aria-hidden="true" loading="lazy">
+                </div>
+                <div class="item-choose__body">
+                  <h3 class="item-choose__title">Диагностика за 30 минут</h3>
+                  <div class="item-choose__text">Быстро и точно найдём причину</div>
+                </div>
+              </li>
+              <li class="choose__item" aria-hidden="true">
+                <div class="choose__image">
+                  <picture><source srcset="img/choose/01.webp, img/choose/01_2x.webp 2x" type="image/webp"><img src="img/choose/01.png" srcset="img/choose/01_2x.png 2x" alt="" loading="lazy"></picture>
+                </div>
+              </li>
+              <li class="choose__item item-choose">
+                <div class="item-choose__icon">
+                  <img src="img/icons/trusted.svg" alt="" aria-hidden="true" loading="lazy">
+                </div>
+                <div class="item-choose__body">
+                  <h3 class="item-choose__title">Гарантия до 2 лет</h3>
+                  <div class="item-choose__text">Доверяем своей работе</div>
+                </div>
+              </li>
+              <li class="choose__item item-choose">
+                <div class="item-choose__icon">
+                  <img src="img/icons/repair.svg" alt="" aria-hidden="true" loading="lazy">
+                </div>
+                <div class="item-choose__body">
+                  <h3 class="item-choose__title">Современный инструмент</h3>
+                  <div class="item-choose__text">Как в дилерском центре</div>
+                </div>
+              </li>
+            </ul> -->
           </div>
         </div>
       </section>
@@ -276,7 +322,6 @@
         <div class="guarantee__body">
           <div class="guarantee__image">
             <picture><source srcset="img/guarantee/01.webp, img/guarantee/01_2x.webp 2x" type="image/webp"><img src="img/guarantee/01.jpg" srcset="img/guarantee/01_2x.jpg 2x" alt="" loading="lazy"></picture>
-            <!-- <picture><source srcset="img/cover-1.webp" type="image/webp"><img src="img/cover-1.jpg" alt="" loading="lazy"></picture> -->
           </div>
           <div class="guarantee__decor">
             <img src="img/guarantee/decor.svg" aria-hidden="true" alt="" loading="lazy">
@@ -742,10 +787,13 @@
       <div class="footer__menu menu-footer">
         <nav class="menu-footer__body">
           <ul class="menu-footer__list list-reset">
-            <li class="menu-footer__item"><a class="menu-footer__link" href="#">Главная</a></li>
-            <li class="menu-footer__item"><a class="menu-footer__link" href="#">Услуги</a></li>
-            <li class="menu-footer__item"><a class="menu-footer__link" href="#">Отзывы</a></li>
-            <li class="menu-footer__item"><a class="menu-footer__link" href="#">Контакты</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="#" data-goto=".hero">Главная</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="#" data-goto=".advantages"
+                data-goto-header>Услуги</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="#" data-goto=".reviews"
+                data-goto-header>Отзывы</a></li>
+            <li class="menu-footer__item"><a class="menu-footer__link" href="#" data-goto=".contacts"
+                data-goto-header>Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -774,7 +822,7 @@
 </footer>
   </div>
 
-  <script src="js/app.min.js?_v=20260221215429"></script>
+  <script src="js/app.min.js?_v=20260724221012"></script>
 </body>
 
 </html>

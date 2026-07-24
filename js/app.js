@@ -17,6 +17,40 @@ function headerScroll() {
   const observerHeader = new IntersectionObserver(callback);
   observerHeader.observe(headerElement);
 };
+
+function gotoScroll() {
+  const gotoLinks = document.querySelectorAll("[data-goto]");
+  if (gotoLinks.length) {
+    gotoLinks.forEach(gotoLink => {
+      gotoLink.addEventListener("click", onMenuLinkClick);
+    });
+
+    function onMenuLinkClick(e) {
+      e.preventDefault();
+      const gotoTargetLink = e.target;
+      const gotoCurrentLink = gotoTargetLink.closest("[data-goto]").dataset.goto;
+      if (gotoTargetLink.dataset.goto && document.querySelector(gotoTargetLink.dataset.goto)) {
+        const gotoBlock = document.querySelector(gotoCurrentLink);
+        const gotoLinkHeader = gotoTargetLink.hasAttribute("data-goto-header");
+        const gotoLinkHeaderHeight = document.querySelector("header").offsetHeight;
+        const gotoLinkOffsetTop = gotoTargetLink.hasAttribute("data-goto-top");
+        const gotoLinkOffsetTopValue = gotoTargetLink.dataset.gotoTop ? gotoTargetLink.dataset.gotoTop : 0;
+        let gotoTargetBlockPosition = gotoBlock.offsetTop;
+        gotoTargetBlockPosition = gotoLinkHeader ? gotoTargetBlockPosition - gotoLinkHeaderHeight : gotoTargetBlockPosition;
+        gotoTargetBlockPosition = gotoLinkOffsetTop ? gotoTargetBlockPosition - gotoLinkOffsetTopValue : gotoTargetBlockPosition;
+        window.scrollTo({
+          top: gotoTargetBlockPosition,
+          behavior: "smooth",
+        });
+      }
+
+      if (document.documentElement.classList.contains("menu-open")) {
+        document.documentElement.classList.remove("menu-open", "lock")
+      }
+
+    };
+  }
+}
 ;// CONCATENATED MODULE: ./src/js/files/modules.js
 const flsModules = {};
 ;// CONCATENATED MODULE: ./src/js/files/forms.js
@@ -9975,6 +10009,7 @@ ymaps_esm
 
 
 headerScroll();
+gotoScroll();
 
 
 
